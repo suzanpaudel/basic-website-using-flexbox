@@ -118,7 +118,7 @@ p {
   top: 0;
   display: flex;
   justify-content: space-between;
-  background: #333;
+  background: #222;
   color: #fff;
   z-index: 1;
   padding: 1rem;
@@ -142,7 +142,6 @@ p {
     url('../images/showcase.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 100vh;
   color: #fff;
 }

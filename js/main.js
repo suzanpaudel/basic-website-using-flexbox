@@ -1,12 +1,16 @@
 // Sticky Menu Navbar
-window.addEventListener('scroll', function () {
-  if (window.screenY > 150) {
-    document.querySelector('#navbar').style.opacity = 0.5;
-  } else {
-    document.querySelector('#navbar').style.opacity = 1;
-  }
-});
+const checkpoint = 100;
 
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint) {
+    opacity = 1;
+  } else {
+    opacity = 0.9;
+  }
+
+  document.querySelector('#navbar').style.opacity = opacity;
+});
 // Smooth Scrolling
 $('#navbar a, .btn').on('click', function (event) {
   if (this.hash !== '') {
@@ -16,7 +20,7 @@ $('#navbar a, .btn').on('click', function (event) {
 
     $('html, body').animate(
       {
-        scrollTop: $(hash).offset().top - 80,
+        scrollTop: $(hash).offset().top - 65,
       },
       800
     );
