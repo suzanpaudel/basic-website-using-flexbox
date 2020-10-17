@@ -28,6 +28,21 @@ p {
   overflow: hidden;
 }
 
+.bg-light {
+  background: #fff;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #94cb52;
+  color: #fff;
+}
+
 .text-primary {
   color: #94cb52;
 }
@@ -51,6 +66,10 @@ p {
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
 }
 
 .py-1 {
@@ -81,6 +100,16 @@ p {
 .btn-dark {
   background-color: #333;
   color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
 }
 
 /* Navbar */
@@ -145,4 +174,48 @@ p {
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+/* Section: Who Are We */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+  flex-basis: 50%;
+}
+
+#who .who-img {
+  background: url('../images/people.jpg') no-repeat center center/cover;
+}
+
+/* Section: Clients */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Section: Contact */
+
+#contact .contact-form .form-group {
+  margin: 0.75rem 0;
+}
+
+#contact .contact-form label {
+  display: block;
+  font-size: 1.1rem;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
 }
